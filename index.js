@@ -6,6 +6,9 @@ var express = require('express'),
 	pg		= require('pg'),
 	app		= express();
 
+// pull specifics instead of everything
+// const { Pool, Client } = require('pg')
+
 /* Database connection string format and string */
 // var conString = 'postgresql://dbuser:secretpassword@database.server.com:3211/mydb'
 var connector = 'postgresql://root:dollar@localhost/db_recipes'
@@ -28,10 +31,26 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // create a route
 app.get('/', function(req, res){
-	console.log('App Langing page loaded successfully!');
-	res.render('index');
-})
+	console.log('App Landing page loaded successfully!');
+	// res.render('index');
+	// postres connection
 
+	pg.connect(connector, function(err, client, done){
+		if(err){
+			return console.error('error fetching the client data from Pool', err);
+		}
+		client.query('SELECT * FROM recipes', function(err, result){
+			if (err){
+				return console.log('Error in running the query!', err);
+			}
+
+			// render the template
+			res.render('index', {recipes: result.rows});
+		});
+		done();
+	});
+
+});
 
 
 
@@ -39,3 +58,4 @@ app.get('/', function(req, res){
 app.listen(3000, function(){
 	console.log('Express server now running on port 3000!')
 });
+

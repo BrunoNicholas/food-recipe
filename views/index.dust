@@ -4,4 +4,8 @@
 
 {<body}
 	Welcome to My <b>Food Recipe App</b>
+	<hr>
+	{#recipes}
+		{name}
+	{/recipes}
 {/body}

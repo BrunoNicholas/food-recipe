@@ -2,8 +2,18 @@
 <html>
 <head>
 	<title>{+title /} - Recipe App</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	{+body /}
+	<div class="container">
+		<div class="row" style="border: thin solid red;">
+			{+body /}
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
