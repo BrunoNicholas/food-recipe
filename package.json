@@ -1,0 +1,39 @@
+{
+  "name": "food-recipe",
+  "version": "1.0.1",
+  "description": "This is a test application of express and postgresql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrunoNicholas/food-recipe.git"
+  },
+  "keywords": [
+    "Food",
+    "Recipe",
+    "Node",
+    "PostgreSQL",
+    "Express",
+    "JS",
+    "JavaScript"
+  ],
+  "author": "Bruno Nicholas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BrunoNicholas/food-recipe/issues"
+  },
+  "homepage": "https://github.com/BrunoNicholas/food-recipe#readme",
+  "dependencies": {
+    "body-parser": "*",
+    "consolation": "*",
+    "consolidate": "^0.15.1",
+    "dust": "*",
+    "dustjs-helpers": "^1.7.4",
+    "dustjs-linkedin": "*",
+    "express": "*",
+    "nodemon": "^1.19.1",
+    "pg": "*"
+  }
+}
