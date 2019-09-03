@@ -24,5 +24,16 @@
   "bugs": {
     "url": "https://github.com/BrunoNicholas/food-recipe/issues"
   },
-  "homepage": "https://github.com/BrunoNicholas/food-recipe#readme"
+  "homepage": "https://github.com/BrunoNicholas/food-recipe#readme",
+  "dependencies": {
+    "body-parser": "*",
+    "consolation": "*",
+    "consolidate": "^0.15.1",
+    "dust": "*",
+    "dustjs-helpers": "^1.7.4",
+    "dustjs-linkedin": "*",
+    "express": "*",
+    "nodemon": "^1.19.1",
+    "pg": "*"
+  }
 }
