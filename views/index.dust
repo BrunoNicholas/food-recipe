@@ -1,0 +1,7 @@
+{>"layout" /}
+
+{<title} Welcome {/title}
+
+{<body}
+	Welcome to My <b>Food Recipe App</b>
+{/body}

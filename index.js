@@ -29,6 +29,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // create a route
 app.get('/', function(req, res){
 	console.log('App Langing page loaded successfully!');
+	res.render('index');
 })
 
 
